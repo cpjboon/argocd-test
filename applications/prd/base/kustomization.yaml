@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Kustomization
+resources:
+  - ns-ubu-dev.yaml
+  - ns-ubu-tst.yaml
+  - ns-ubu-acc.yaml
+  - ns-ubu-prd.yaml
+  - sa-deploy-dev.yaml
+  - sa-deploy-tst.yaml
+  - sa-deploy-acc.yaml
+  - sa-deploy-prd.yaml
