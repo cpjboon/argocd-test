@@ -3,14 +3,14 @@ items:
 - apiVersion: argoproj.io/v1alpha1
   kind: AppProject
   metadata:
-    name: ubu
+    name: ubu-apps
     namespace: openshift-gitops
   spec:
     clusterResourceWhitelist:
     - group: '*'
       kind: '*'
     destinations:
-    - namespace: 'ubu-'
+    - namespace: '*'
       server: 'https://kubernetes.default.svc'
     sourceRepos:
     - 'https://github.com/cpjboon/argocd-test'

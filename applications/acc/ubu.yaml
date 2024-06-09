@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ubu
+  name: ubu-psalter
 spec:
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: openshift-gitops
-  project: ubu
+  project: ubu-apps
   source:
     repoURL: 'https://github.com/cpjboon/argocd-test'
     path: ubu-apps/overlays/acc
