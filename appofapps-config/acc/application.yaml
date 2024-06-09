@@ -7,10 +7,9 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
-
   destination:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://github.com/cpjboon/argocd-test/applications
-    path: acc
+    repoURL: https://github.com/cpjboon/argocd-test
+    path: applications/acc
