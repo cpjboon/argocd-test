@@ -5,8 +5,8 @@ metadata:
 spec:
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: default
-  project: default
+    namespace: openshift-gitops
+  project: ubu
   source:
     repoURL: 'https://github.com/cpjboon/argocd-test'
     path: ubu-apps/overlays/acc

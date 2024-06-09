@@ -6,10 +6,13 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  project: default
+  project: ubu
   destination:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/cpjboon/argocd-test
     path: applications/acc
+  syncPolicy:
+    automated: {}
+    
