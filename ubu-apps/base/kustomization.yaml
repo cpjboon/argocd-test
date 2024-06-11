@@ -1,11 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ns-ubu-dev.yaml
-  - ns-ubu-tst.yaml
-  - ns-ubu-acc.yaml
-  - ns-ubu-prd.yaml
-  - sa-deploy-dev.yaml
-  - sa-deploy-tst.yaml
-  - sa-deploy-acc.yaml
-  - sa-deploy-prd.yaml
+  - ubu-dev.yaml
+  - ubu-tst.yaml
+  - ubu-acc.yaml
+  - ubu-prd.yaml
